@@ -70,8 +70,12 @@
   color: var(--color-light);
 }
 
-/* ===============    MEDIA UERY(MEDIUM DEVICE)   ================= */
+/* ===============    MEDIA USER(MEDIUM DEVICE)   ================= */
 @media screen and (max-width: 1024px) {
+  .about__container {
+    padding-top: 2rem;
+  }
+
   .about__container {
     grid-template-columns: 1fr;
     gap: 0;
@@ -90,7 +94,7 @@
   }
 }
 
-/* ===============    MEDIA UERY(MEDIUM SMALL)   ================= */
+/* ===============    MEDIA USER(MEDIUM SMALL)   ================= */
 @media screen and (max-width: 600px) {
   .about__me {
     width: 65%;
