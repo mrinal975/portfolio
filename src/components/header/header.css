@@ -57,12 +57,14 @@ header {
   font-size: 0.9rem;
 }
 
+
 /* ===============    MEDIA UERY(MEDIUM DEVICE)   ================= */
 @media screen and(max-width:1024px) {
   header {
     height: 68vh;
   }
 }
+
 
 /* ===============    MEDIA UERY(MEDIUM SMALL)   ================= */
 @media screen and(max-width:600) {
