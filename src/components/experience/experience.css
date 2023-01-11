@@ -40,7 +40,7 @@
   color: var(--color-primary);
 }
 
-/* ===============    MEDIA USER(MEDIUM DEVICE)   ================= */
+/* ===============    MEDIA QUERY(MEDIUM DEVICES)   ================= */
 @media screen and (max-width: 1024px) {
   .experience__container {
     grid-template-columns: 1fr;
@@ -57,7 +57,7 @@
   }
 }
 
-/* ===============    MEDIA USER(MEDIUM SMALL)   ================= */
+/* ===============   MEDIA QUERY(SMALL DEVICES)  ================= */
 @media screen and (max-width: 600px) {
   .experience__container {
     gap: 1rem;

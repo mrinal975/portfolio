@@ -27,14 +27,14 @@
   margin: 0.8rem auto 0;
 }
 
-/* ===============    MEDIA USER(MEDIUM DEVICE)   ================= */
+/* ===============    MEDIA QUERY(MEDIUM DEVICES)   ================= */
 @media screen and (max-width: 1024px) {
   .container.testimonial__container {
     width: 60%;
   }
 }
 
-/* ===============    MEDIA USER(MEDIUM SMALL)   ================= */
+/* ===============    MEDIA QUERY(SMALL DEVICES)   ================= */
 @media screen and (max-width: 600px) {
   .container.testimonial__container {
     width: var(--container-width-sm);

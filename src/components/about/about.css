@@ -70,7 +70,7 @@
   color: var(--color-light);
 }
 
-/* ===============    MEDIA USER(MEDIUM DEVICE)   ================= */
+/* ===============   MEDIA QUERY(MEDIUM DEVICES)   ================= */
 @media screen and (max-width: 1024px) {
   .about__container {
     padding-top: 2rem;
@@ -94,7 +94,7 @@
   }
 }
 
-/* ===============    MEDIA USER(MEDIUM SMALL)   ================= */
+/* ===============   MEDIA QUERY(SMALL DEVICES)  ================= */
 @media screen and (max-width: 600px) {
   .about__me {
     width: 65%;

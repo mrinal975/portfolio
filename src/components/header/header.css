@@ -57,14 +57,14 @@ header {
   font-size: 0.9rem;
 }
 
-/* ===============    MEDIA USER(MEDIUM DEVICE)   ================= */
+/* =================    MEDIA QUERY(MEDIUM DEVICES)  ================= */
 @media screen and (max-width: 1024px) {
   header {
     height: 68vh;
   }
 }
 
-/* ===============    MEDIA USER(MEDIUM SMALL)   ================= */
+/* ===============  MEDIA QUERY(SMALL DEVICES)  ================= */
 @media screen and (max-width: 600px) {
   header {
     height: 100vh;

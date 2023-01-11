@@ -31,7 +31,7 @@
   margin-bottom: 1rem;
 }
 
-/* ===============    MEDIA USER(MEDIUM DEVICE)   ================= */
+/* ===============    MEDIA QUERY(MEDIUM DEVICES)   ================= */
 @media screen and (max-width: 1024px) {
   .portfolio__container {
     grid-template-columns: 1fr 1fr;
@@ -39,7 +39,7 @@
   }
 }
 
-/* ===============    MEDIA USER(MEDIUM SMALL)   ================= */
+/* ===============   MEDIA QUERY(SMALL DEVICES)  ================= */
 @media screen and (max-width: 600px) {
   .portfolio__container {
     grid-template-columns: 1fr;
