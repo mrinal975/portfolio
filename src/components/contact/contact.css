@@ -43,6 +43,12 @@ form {
   flex-direction: column;
   gap: 1.2rem;
 }
+.success {
+  color: rgb(93, 224, 148);
+}
+.fail {
+  color: rgb(238, 91, 6);
+}
 
 input,
 textarea {

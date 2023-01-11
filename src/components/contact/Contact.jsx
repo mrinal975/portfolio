@@ -1,10 +1,54 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const form = useRef();
+  const YOUR_SERVICE_ID = "service_i28kasc";
+  const YOUR_TEMPLATE_ID = "template_904dmfi";
+  const YOUR_PUBLIC_KEY = "q1mhEQH5AGPAR6w8E";
+  const [isMailSend, setIsMailSend] = useState(false);
+  let [isSuccess, setIsSuccess] = useState(false);
+  let [mailSendMessage, setMailSendMessage] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        YOUR_SERVICE_ID,
+        YOUR_TEMPLATE_ID,
+        form.current,
+        YOUR_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log("succes");
+          setIsMailSend(true);
+          setIsSuccess(true);
+          setMailSendMessage("Email send successfully");
+          setTimeout(() => {
+            setIsMailSend(true);
+            setMailSendMessage("");
+          }, "3000");
+        },
+        (error) => {
+          console.log("fail");
+          setIsMailSend(true);
+          setIsSuccess(false);
+          setMailSendMessage("Email sending failed");
+          setTimeout(() => {
+            setIsMailSend(true);
+            setMailSendMessage("");
+          }, "3000");
+        }
+      );
+
+    // e.target.reset();
+  };
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -40,7 +84,13 @@ const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTION */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
+          {isMailSend ? (
+            <h4 className={isSuccess ? "success" : "fail"}>
+              {mailSendMessage}
+            </h4>
+          ) : null}
+
           <input
             type="text"
             name="name"
